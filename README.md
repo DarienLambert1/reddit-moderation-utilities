@@ -53,8 +53,8 @@ cp praw.ini.dist praw.ini
 
 10. You are now ready to run moderation scripts below. These steps only need to be performed once.
 
-## Run Moderation Scripts
-### Copy Sub to Another Sub
+# Run Moderation Scripts
+## Copy Sub to Another Sub
 
 1. Execute the script
 ```
