@@ -1,0 +1,11 @@
+[DEFAULT]
+client_id=
+client_secret=
+redirect_uri=http://localhost:8080
+bot_name=CHANGE_THIS_NAME
+bot_version=0.1.0
+bot_author=PUT_YOUR_REDDIT_USERNAME_HERE
+user_agent=script:%(bot_name)s:v%(bot_version)s (by /u/%(bot_author)s)
+
+[main]
+refresh_token=
