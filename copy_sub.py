@@ -276,8 +276,13 @@ def copy_old_reddit_sidebar():
 def copy_subreddit_settings():
     print_step("Copying subreddit settings...")
 
-    spoilers_enabled = source_sub.mod.settings()["spoilers_enabled"]
-    target_sub.mod.update(spoilers_enabled=spoilers_enabled)
+    source_sub_settings = source_sub.mod.settings()
+
+    spoilers_enabled = source_sub_settings["spoilers_enabled"]
+    allow_videos = source_sub_settings["allow_videos"]
+
+    target_sub.mod.update(spoilers_enabled=spoilers_enabled,
+                          allow_videos=allow_videos)
 
 
 def perform_all_actions():
